@@ -1,0 +1,5 @@
+{
+  "name": "Vision AI Analyzer",
+  "description": "Professional-grade image quality assessment and neural diagnostics suite for iOS and Web.",
+  "requestFramePermissions": ["camera"]
+}

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-plum-950: #080808;
+  --color-plum-900: #121212;
+  --color-plum-800: #1a1a1a;
+  --color-plum-700: #262626;
+  --color-accent-orange: #ff4d00;
+  --color-accent-red: #ff1a1a;
+  --color-accent-warm: #ff8c00;
+}
+
+body {
+  background-color: #080808;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #ff8c00 0%, #ff4d00 50%, #ff1a1a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.trending-gradient {
+  background: linear-gradient(135deg, #ff8c00 0%, #ff4d00 50%, #ff1a1a 100%);
+}
+
+.orange-glow {
+  background: radial-gradient(circle at center, rgba(255, 77, 0, 0.15) 0%, transparent 70%);
+}
+
+.red-glow {
+  background: radial-gradient(circle at center, rgba(255, 26, 26, 0.1) 0%, transparent 70%);
+}
+
